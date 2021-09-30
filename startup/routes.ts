@@ -3,6 +3,7 @@ import reqLogger from '../startup/logger';
 import error from '../middleware/error';
 import auth from '../middleware/auth';
 import order from '../routes/orders';
+import item from '../routes/items';
 
 export default (app: express.Application) => {
   app.use(express.json());
@@ -10,6 +11,7 @@ export default (app: express.Application) => {
   app.use(error);
   app.use(auth);
   app.use('/api/orders', order);
+  app.use('/api/items', item);
   app.get('/', (_req, res) => {
     res.json({ status: true, message: 'Welcome to UtilizeCore Order API 👨‍🎤' });
   });

@@ -11,12 +11,20 @@ const MIDDLEWARE_AUTH_CONSTANTS = {
 // order contants
 const ORDER_CONSTANTS = {
   ORDER_SUCCESS: 'Order placed successfully',
-  ORDER_FAILED: 'Failed to place order'
+  ORDER_FAILED: 'Failed to place order',
+  ORDER_NOT_FOUND: 'Order not found!'
 };
 
-// auth contants
-// const AUTH_CONSTANTS: object = {
-//   INVALID_OPERATOR: "Invalid API key"
-// };
+// order contants
+const ITEM_CONSTANTS = {
+  ITEM_SUCCESS: 'Operation successful',
+  ITEM_FAILED: 'Operation failed',
+  ITEM_EXISTS: 'Item already exists'
+};
 
-export { SYSTEM_FAILURE, MIDDLEWARE_AUTH_CONSTANTS, ORDER_CONSTANTS };
+export {
+  SYSTEM_FAILURE,
+  MIDDLEWARE_AUTH_CONSTANTS,
+  ORDER_CONSTANTS,
+  ITEM_CONSTANTS
+};

@@ -7,5 +7,5 @@ export default () => {
   const db: string = config.get('dbConnString');
   mongoose
     .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => winston.info(`Database connected...`));
+    .then(() => console.log(`Database connected...`));
 };

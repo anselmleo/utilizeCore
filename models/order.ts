@@ -10,8 +10,8 @@ interface Order {
 const schema = new Schema<Order>(
   {
     items: [{ type: Schema.Types.ObjectId, ref: 'item' }],
-    address: { type: String },
-    discount: { type: Number }
+    address: { type: String, required: true },
+    discount: { type: Number, required: true }
   },
   { timestamps: true }
 );
@@ -20,8 +20,9 @@ const Order = model<Order>('Order', schema);
 
 const validateOrderPost = async (order: Order) => {
   const schema = Joi.object({
-    address: Joi.string(),
-    discount: Joi.number()
+    items: Joi.array().items(Joi.string()),
+    address: Joi.string().required(),
+    discount: Joi.number().required()
   });
 
   try {
