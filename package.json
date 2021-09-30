@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf biuld/ && prettier --write . && tsc",
-    "dev": "NODE_ENV=dev nodemon index.ts",
+    "dev": "NODE_ENV=dev ts-node-dev index.ts",
     "testing": "NODE_ENV=testing ts-node index.ts",
     "debug": "NODE_ENV=testing nodemon index.ts"
   },
@@ -29,5 +29,8 @@
     "joi": "^17.4.0",
     "mongoose": "^5.12.7",
     "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8"
   }
 }

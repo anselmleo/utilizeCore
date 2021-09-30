@@ -8,9 +8,15 @@ const MIDDLEWARE_AUTH_CONSTANTS = {
   INVALID_AUTH_TOKEN: 'Invalid token'
 };
 
+// order contants
+const ORDER_CONSTANTS = {
+  ORDER_SUCCESS: 'Order placed successfully',
+  ORDER_FAILED: 'Failed to place order'
+};
+
 // auth contants
 // const AUTH_CONSTANTS: object = {
 //   INVALID_OPERATOR: "Invalid API key"
 // };
 
-export { SYSTEM_FAILURE, MIDDLEWARE_AUTH_CONSTANTS };
+export { SYSTEM_FAILURE, MIDDLEWARE_AUTH_CONSTANTS, ORDER_CONSTANTS };
