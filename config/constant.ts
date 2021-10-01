@@ -10,8 +10,8 @@ const MIDDLEWARE_AUTH_CONSTANTS = {
 
 // order contants
 const ORDER_CONSTANTS = {
-  ORDER_SUCCESS: 'Order placed successfully',
-  ORDER_FAILED: 'Failed to place order',
+  ORDER_SUCCESS: 'Operation successful',
+  ORDER_FAILED: 'Operation failed',
   ORDER_NOT_FOUND: 'Order not found!'
 };
 
@@ -19,7 +19,8 @@ const ORDER_CONSTANTS = {
 const ITEM_CONSTANTS = {
   ITEM_SUCCESS: 'Operation successful',
   ITEM_FAILED: 'Operation failed',
-  ITEM_EXISTS: 'Item already exists'
+  ITEM_EXISTS: 'Item already exists',
+  ITEM_NOT_FOUND: 'Item not found!'
 };
 
 export {

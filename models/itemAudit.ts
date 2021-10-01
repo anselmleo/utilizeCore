@@ -1,4 +1,5 @@
 import { Schema, model, connect } from 'mongoose';
+import { Item } from './item';
 
 interface ItemAudit {
   itemId: String;

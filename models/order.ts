@@ -11,7 +11,8 @@ const schema = new Schema<Order>(
   {
     items: [{ type: Schema.Types.ObjectId, ref: 'item' }],
     address: { type: String, required: true },
-    discount: { type: Number, required: true }
+    discount: { type: Number, required: true },
+    total: { type: Number, required: true }
   },
   { timestamps: true }
 );
